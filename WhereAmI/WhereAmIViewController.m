@@ -20,7 +20,9 @@
 	locationManager = [[CLLocationManager alloc] init];
     [locationManager setDelegate:self];
     [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [locationManager setDistanceFilter:50];
     [locationManager startUpdatingLocation];
+    [locationManager startUpdatingHeading];
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,6 +35,11 @@
 {
     CLLocation *location = [locations objectAtIndex:0];
     NSLog(@"%@", [location description]);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+{
+    NSLog(@"New heading: %@", [newHeading description]);
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
