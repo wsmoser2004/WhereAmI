@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0A4C7D18999028009D3145 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0A4C7C18999028009D3145 /* MapKit.framework */; };
+		EF0A4C8018999B9F009D3145 /* BNRMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0A4C7F18999B9F009D3145 /* BNRMapPoint.m */; };
 		EFE5D3FC1896F6DA00563D60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5D3FB1896F6DA00563D60 /* Foundation.framework */; };
 		EFE5D3FE1896F6DA00563D60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5D3FD1896F6DA00563D60 /* CoreGraphics.framework */; };
 		EFE5D4001896F6DA00563D60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5D3FF1896F6DA00563D60 /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF0A4C7C18999028009D3145 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EF0A4C7E18999B9F009D3145 /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMapPoint.h; sourceTree = "<group>"; };
+		EF0A4C7F18999B9F009D3145 /* BNRMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMapPoint.m; sourceTree = "<group>"; };
 		EFE5D3F81896F6DA00563D60 /* WhereAmI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereAmI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5D3FB1896F6DA00563D60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EFE5D3FD1896F6DA00563D60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0A4C7D18999028009D3145 /* MapKit.framework in Frameworks */,
 				EFE5D4311896F76B00563D60 /* CoreLocation.framework in Frameworks */,
 				EFE5D3FE1896F6DA00563D60 /* CoreGraphics.framework in Frameworks */,
 				EFE5D4001896F6DA00563D60 /* UIKit.framework in Frameworks */,
@@ -104,6 +110,7 @@
 		EFE5D3FA1896F6DA00563D60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF0A4C7C18999028009D3145 /* MapKit.framework */,
 				EFE5D4301896F76B00563D60 /* CoreLocation.framework */,
 				EFE5D3FB1896F6DA00563D60 /* Foundation.framework */,
 				EFE5D3FD1896F6DA00563D60 /* CoreGraphics.framework */,
@@ -121,6 +128,8 @@
 				EFE5D40D1896F6DA00563D60 /* Main.storyboard */,
 				EFE5D4101896F6DA00563D60 /* WhereAmIViewController.h */,
 				EFE5D4111896F6DA00563D60 /* WhereAmIViewController.m */,
+				EF0A4C7E18999B9F009D3145 /* BNRMapPoint.h */,
+				EF0A4C7F18999B9F009D3145 /* BNRMapPoint.m */,
 				EFE5D4131896F6DA00563D60 /* Images.xcassets */,
 				EFE5D4021896F6DA00563D60 /* Supporting Files */,
 			);
@@ -256,6 +265,7 @@
 			files = (
 				EFE5D4121896F6DA00563D60 /* WhereAmIViewController.m in Sources */,
 				EFE5D40C1896F6DA00563D60 /* WhereAmIAppDelegate.m in Sources */,
+				EF0A4C8018999B9F009D3145 /* BNRMapPoint.m in Sources */,
 				EFE5D4081896F6DA00563D60 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +475,7 @@
 				EFE5D42C1896F6DA00563D60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFE5D42D1896F6DA00563D60 /* Build configuration list for PBXNativeTarget "WhereAmITests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +484,7 @@
 				EFE5D42F1896F6DA00563D60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
